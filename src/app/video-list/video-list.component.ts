@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LatestVideoService } from '../latest-video.service';
+import { MovieInterface } from '../interface/movie.interface';
 
 @Component({
   selector: 'app-video-list',
@@ -19,7 +20,7 @@ export class VideoListComponent implements OnInit {
 
   ngOnInit() {
     this.latestVideoService.fetchMovies()
-      .then((movies) => {
+      .then((movies: Array<MovieInterface>) => {
         this.movies = movies;
       })
   }
