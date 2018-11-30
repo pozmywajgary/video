@@ -10,7 +10,7 @@ import { VideoListComponent } from '../video-list/video-list.component';
     CommonModule,
     VideosRoutingModule
   ],
-  exports:[
+  exports: [
     VideoListComponent
   ]
 })
