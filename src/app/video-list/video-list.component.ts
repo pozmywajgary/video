@@ -22,7 +22,7 @@ export class VideoListComponent implements OnInit {
     this.latestVideoService.fetchMovies()
       .then((movies: Array<MovieInterface>) => {
         this.movies = movies;
-      })
+      });
   }
 
 }
