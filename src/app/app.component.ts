@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'video';
+  public title = 'Piotr B';
+  public color = 'red';
+
+  get styles() {
+    return {
+      'background': this.color,
+      'color': 'black'
+    }
+  }
 }
